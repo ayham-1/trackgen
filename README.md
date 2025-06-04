@@ -1,10 +1,9 @@
 # trackgen
 
+![example track](trackgen.webp)
+
 Simple track generator for the UMDRacing Driverless Simulation implementation.
-
-## Configuration of the Generator
-
-TODO: First do UMDT, generator just writes UMDT format
+Not complete, but proof of example works.
 
 ## Description of Track Format (UMDT)
 

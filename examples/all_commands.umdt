@@ -6,6 +6,6 @@ curve,left,0.5,10
 turn_left
 turn_right
 esses,left,true,5
-chicane,true,45,40,100,45,40
-double_apex_turn,true,45,40,100,45,40
+chicane,left,45,100,40
+double_apex_turn,right,35
 end

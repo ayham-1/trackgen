@@ -32,20 +32,23 @@ class UMDT_Visualize:
         # camera_offset = pygame.Vector2(0, 0)
         camera_speed = 5 * state.sf * 0.5
 
+        track = parsed["parts"]
         track = [["circle", "right", 20, 180], ["turn_right"]]
         # track = [["circle", "right", 20, 180]]
-        track = [["curve", "right", 0.5, 20], ["curve", "right", 0.75, 20], [
-            "curve", "right", 1.0, 20], ["curve", "right", 1.0, 20], ["straight", 20]]
 
-        track = [["straight", 30], [
-            "circle", "right", 20, 270], ["straight", 50]]
-        track = [["circle", "left", 20, 360], ["circle", "right", 20, 360]]
-        track = parsed["parts"]
-        track = [["circle", "right", 20, 90], ["circle", "left", 20, 180], [
-            "circle", "right", 20, 180], ["circle", "left", 20, 180]]
         track = [["esses", "right", True, 5]]
         track = [["chicane", "right", 45, 10, 45]]
         track = [["double_apex_turn", "left", 10]]
+
+        track = [["curve", "right", 0.5, 20], ["curve", "right", 0.75, 20], [
+            "curve", "right", 1.0, 20], ["curve", "right", 1.0, 20], ["straight", 20]]
+
+        track = [["circle", "right", 20, 90], ["circle", "left", 20, 180], [
+            "circle", "right", 20, 180], ["circle", "left", 20, 180]]
+
+        track = [["circle", "left", 20, 360], ["circle", "right", 20, 360]]
+        track = [["straight", 30], [
+            "circle", "right", 20, 270], ["straight", 50]]
 
         track = UMDT_Geometry.process_track(track)
 
