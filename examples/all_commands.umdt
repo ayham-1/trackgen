@@ -1,0 +1,11 @@
+cfg,distance_between_cones,5
+cfg,width_of_track,2.5
+start
+straight,10
+curve,left,0.5,10
+turn_left
+turn_right
+esses,left,true,5
+chicane,true,45,40,100,45,40
+double_apex_turn,true,45,40,100,45,40
+end

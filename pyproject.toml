@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "umdt"
+version = "20242211"
+dependencies = [
+    'numpy',
+    'scipy',
+    'pygame',
+]
+requires-python = ">=3.8"
+authors = [
+  {name = "ayham-1", email = "me@ayham.xyz"},
+]
+maintainers = [
+  {name = "ayham-1", email = "me@ayham.xyz"},
+]
+description = "Generate, Parse, and Visualize UMDT files"
+readme = "README.md"
+
+[project.urls]
+Homepage = "https://github.com/umdracing/DVSimulation"
+
+[tool.hatch.build.target.sdist.force-include]
+"umdt/umdt.py" = "src/umdt/umdt.py"
+
+[project.scripts]
+umdt = "umdt.umdt:main"
+
+#[tool.hatch.build.targets.wheel]
+#packages = ["umdt"]

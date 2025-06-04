@@ -1,0 +1,4 @@
+cfg,distance_between_cones,5
+cfg,width_of_track,5
+circle,left,20,360
+circle,right,20,360

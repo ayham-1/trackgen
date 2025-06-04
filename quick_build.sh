@@ -1,0 +1,2 @@
+hatch clean
+hatch build
